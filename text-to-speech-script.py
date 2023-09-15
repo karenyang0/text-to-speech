@@ -1,3 +1,7 @@
 import pyttsx3
 
-# very bad
+text_speech = pyttsx3.init()
+
+answer = input("What do you want to convert to speech? ")
+text_speech.say(answer)
+text_speech.runAndWait()
